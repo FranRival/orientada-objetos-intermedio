@@ -23,3 +23,10 @@ console.log(Object.entries(estudiante1)); //array de arrays
 
 
 console.log(Object.getOwnPropertyDescriptors(estudiante1)); //objeto con propiedades. 
+
+Object.defineProperty(estudiante1, 'PruebaNASA', {
+    value: 'estraterrestres',
+    writable: true,
+    configurable: true,
+    enumerable: true,
+})
