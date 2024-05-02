@@ -13,9 +13,13 @@ const estudiante1 = {
     }
 }
 
-
+/* 
 console.log(Object.keys(estudiante1)) //longitud, imprimiendo las propiedades
 console.log(Object.getOwnPropertyNames(estudiante1));//lo mismo de arriba
 console.log(Object.entries(estudiante1)); //array de arrays
-
+ */
 //Object.entries(estudiante1)[x][x]('xxxx')
+//Object.entries(estudiante1)[3][1]('Curso beta') -> unceaught error
+
+
+console.log(Object.getOwnPropertyDescriptors(estudiante1)); //objeto con propiedades. 
