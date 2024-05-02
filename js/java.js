@@ -63,6 +63,14 @@ Object.defineProperty(estudiante1, 'terminal', {
     configurable: false
 })
 
+Object.defineProperty(estudiante1, 'extraterrestres', {
+    value: 'Ovnis alv',
+    writable: false,
+    enumerable: false,
+    configurable: false
+})
+
+
 console.log(Object.getOwnPropertyDescriptors(estudiante1));
 
 //cuando estan en writtable: false. no pueden cambiar la infromacion. pero 
