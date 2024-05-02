@@ -14,15 +14,14 @@ const estudiante1 = {
 }
 
 /* 
-console.log(Object.keys(estudiante1)) //longitud, imprimiendo las propiedades
-console.log(Object.getOwnPropertyNames(estudiante1));//lo mismo de arriba
-console.log(Object.entries(estudiante1)); //array de arrays
- */
-//Object.entries(estudiante1)[x][x]('xxxx')
-//Object.entries(estudiante1)[3][1]('Curso beta') -> unceaught error
+console.log(Object.keys(estudiante1))
+console.log(Object.getOwnPropertyNames(estudiante1))
+console.log(Object.entries(estudiante1)); 
 
 
-console.log(Object.getOwnPropertyDescriptors(estudiante1)); //objeto con propiedades. 
+
+
+
 
 Object.defineProperty(estudiante1, 'PruebaNASA', {
     value: 'estraterrestres',
@@ -30,3 +29,38 @@ Object.defineProperty(estudiante1, 'PruebaNASA', {
     configurable: true,
     enumerable: true,
 })
+
+*/
+
+//objetc.defineProperty
+
+Object.defineProperty(estudiante1, 'navegator', {
+    value: 'chrome',
+    writable: true,
+    enumerable: false,
+    configurable: true
+})
+
+
+Object.defineProperty(estudiante1, 'PruebaNASA', {
+    value: 'extraterrestres',
+    writable: true,
+    enumerable: true,
+    configurable: true
+})
+
+Object.defineProperty(estudiante1, 'editor', {
+    value: 'visualstudio',
+    writable: false,
+    enumerable: true,
+    configurable: true
+})
+
+Object.defineProperty(estudiante1, 'terminal', {
+    value: 'wls',
+    writable: true,
+    enumerable: true,
+    configurable: false
+})
+
+console.log(Object.getOwnPropertyDescriptors(estudiante1));
