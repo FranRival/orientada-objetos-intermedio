@@ -71,6 +71,10 @@ Object.defineProperty(estudiante1, 'extraterrestres', {
 })
 
 
+//Object.seal(estudiante1) //coloca todas las configurable como false.
+Object.freeze(estudiante1) //configurable y writtable.
+
+
 console.log(Object.getOwnPropertyDescriptors(estudiante1));
 
 //cuando estan en writtable: false. no pueden cambiar la infromacion. pero 
