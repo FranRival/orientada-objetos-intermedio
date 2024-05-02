@@ -65,5 +65,6 @@ Object.defineProperty(estudiante1, 'terminal', {
 
 console.log(Object.getOwnPropertyDescriptors(estudiante1));
 
-//objetc.keys -> no aparecen los falses.
-//Object.getOwnPropertiesNames(estudiante1) -> aparecen todos. los falsos incluidos.
+//cuando estan en writtable: false. no pueden cambiar la infromacion. pero 
+//si pueden eliminarlo. 
+//para eso es co figurable.
