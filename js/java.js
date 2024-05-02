@@ -64,3 +64,6 @@ Object.defineProperty(estudiante1, 'terminal', {
 })
 
 console.log(Object.getOwnPropertyDescriptors(estudiante1));
+
+//objetc.keys -> no aparecen los falses.
+//Object.getOwnPropertiesNames(estudiante1) -> aparecen todos. los falsos incluidos.
