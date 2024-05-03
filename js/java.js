@@ -1,7 +1,5 @@
 
 
-//metodos estaticos de prototipo:
-
 const estudiante1 = {
     name: 'studiante1',
     age: 18,
@@ -13,26 +11,7 @@ const estudiante1 = {
     }
 }
 
-/* 
-console.log(Object.keys(estudiante1))
-console.log(Object.getOwnPropertyNames(estudiante1))
-console.log(Object.entries(estudiante1)); 
 
-
-
-
-
-
-Object.defineProperty(estudiante1, 'PruebaNASA', {
-    value: 'estraterrestres',
-    writable: true,
-    configurable: true,
-    enumerable: true,
-})
-
-*/
-
-//objetc.defineProperty
 
 Object.defineProperty(estudiante1, 'navegator', {
     value: 'chrome',
@@ -71,12 +50,26 @@ Object.defineProperty(estudiante1, 'extraterrestres', {
 })
 
 
-//Object.seal(estudiante1) //coloca todas las configurable como false.
-Object.freeze(estudiante1) //configurable y writtable.
+Object.freeze(estudiante1) 
 
 
 console.log(Object.getOwnPropertyDescriptors(estudiante1));
 
-//cuando estan en writtable: false. no pueden cambiar la infromacion. pero 
-//si pueden eliminarlo. 
-//para eso es co figurable.
+//Los objetos son referencias a un esapcio en memoria. 
+//cuando copiamos un objeto, estamos copiando su referencia en la memoria
+
+//memoria en js
+//inicializacion; crear una nueva variable. asignacion; esa variable tiene un valor.
+
+//2 valores; nombre de la variable, valor de cada una variable. no se guardan juntas. 
+
+//se guardan en stack. 
+
+//pero cuando son objetos: es un apuntador. HEAP.
+
+//objetos: referencias a un espacio en memoria.
+//js tiene stack y heap.
+//stack rapida pero sin espacio; nombres y valores de las variables,
+
+//objetos; apuntador a la memoria heap. 
+//solo es con objetos. 
