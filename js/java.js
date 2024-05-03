@@ -1,8 +1,4 @@
 
-
-
-//shallowcopy
-
 const obj1 = {
     a: 'a',
     b: 'b',
@@ -12,22 +8,12 @@ const obj1 = {
     }
 }
 
-const obj2 = {}
 
-for (prop in obj1){
-    obj2[prop] = obj1[prop]
-} 
+const stringifyCOmplexObject = JSON.stringify(obj1)//convierte string
+const obj2 = JSON.parse(stringifyCOmplexObject) //creamos un objeto a partir de un string
 
 
-//no afecta la copia del otro.
-//afecta this shet when tenemos que detallar: 
-//obj1.c.e =
-//esa asignacion ahora si afecta a los demas objetos alv
+//JSON.parse y JSON.stringify
+//JSON.stringify: permite convertir objetos en string.
 
-const obj3 = Object.assign({}, obj1) //copia el proto.
-const obj4 = Object.create(obj1) //copia el proto
-//objetos dentro de otros objetos. 
-
-
-//copias que afectan a los objetos que heredaron.
-//el codigo se rompe cuando tenemos objetos dentro de otros objetos.
+//afectando uno, el otro no se afecta. tampoco sus propiedades del objeto
