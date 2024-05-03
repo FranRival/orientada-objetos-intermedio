@@ -26,3 +26,8 @@ for (prop in obj1){
 
 const obj3 = Object.assign({}, obj1) //copia el proto.
 const obj4 = Object.create(obj1) //copia el proto
+//objetos dentro de otros objetos. 
+
+
+//copias que afectan a los objetos que heredaron.
+//el codigo se rompe cuando tenemos objetos dentro de otros objetos.
