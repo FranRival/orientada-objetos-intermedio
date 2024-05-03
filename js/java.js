@@ -73,3 +73,11 @@ console.log(Object.getOwnPropertyDescriptors(estudiante1));
 
 //objetos; apuntador a la memoria heap. 
 //solo es con objetos. 
+
+//gato1
+//gato2
+
+//si moficiamos uno de estos. madificamos tambien el otro. es el mismo objeto. 
+
+//copiar objetos para resolver problemas:
+//shallow copy. deepcopy. 
