@@ -24,4 +24,5 @@ for (prop in obj1){
 //obj1.c.e =
 //esa asignacion ahora si afecta a los demas objetos alv
 
-const obj3 = Object.assign({}, obj1) //mismo resultado que el ciclo for.
+const obj3 = Object.assign({}, obj1) //copia el proto.
+const obj4 = Object.create(obj1) //copia el proto
