@@ -6,7 +6,7 @@ const obj1 = {
         d: 'd',
         e: 'e'
     },
-    
+
     editA(){
         this.a = 'Amouranth the whore'
     }
@@ -27,3 +27,7 @@ const obj2 = JSON.parse(stringifyCOmplexObject) //creamos un objeto a partir de 
 //apunta a stack y luego a un nuevo heat
 
 //pero no funciona con metodos.
+
+
+//editar objetos dentro de otros objetos.
+//copiar funciones 
