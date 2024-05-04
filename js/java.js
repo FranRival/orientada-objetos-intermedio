@@ -13,21 +13,38 @@ const obj1 = {
 }
 
 
-const stringifyCOmplexObject = JSON.stringify(obj1)//convierte string
-const obj2 = JSON.parse(stringifyCOmplexObject) //creamos un objeto a partir de un string
+/* const stringifyCOmplexObject = JSON.stringify(obj1)
+const obj2 = JSON.parse(stringifyCOmplexObject) 
+ */
 
 
-//JSON.parse y JSON.stringify
-//JSON.stringify: permite convertir objetos en string.
+//RECURSIVIDAD
+//funcion se llama a si misma.
 
-//afectando uno, el otro no se afecta. tampoco sus propiedades del objeto
-
-//convertirmos el obj1 en un string.
-//luego convertimos un string en un objeto. 
-//apunta a stack y luego a un nuevo heat
-
-//pero no funciona con metodos.
+//crea ejecuciones de una misma funcion
 
 
-//editar objetos dentro de otros objetos.
-//copiar funciones 
+//function recursiva(){
+  //  if (/* validacion */) {
+        //llamado recursivo
+    //}else{
+        //llamados normales. sin recursividad. 
+    //}
+//}
+
+
+const numeritos = [0,1,2,3,4,5,6,7,8,9,54656,76,4,5]
+let numerito = 0
+for (let index = 0; index < numeritos.length; index++) {
+    numerito = numeritos[index]
+    console.log({index, numerito});
+}
+
+function recursiva(numersArray){
+    if (numersArray.length !=0) {
+        const firstNum = numersArray[0]
+        console.log(firstNum);
+        numersArray.shift()
+        recursiva(numersArray)
+    }
+}
