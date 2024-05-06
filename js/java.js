@@ -70,9 +70,14 @@ function deepCopy(subject){
 //factory pattern y roro
 //crear moldes de bojetos. con funciones. 
 
+
+function requiereParam (param){
+    throw new Error(param + ' parametro obligatorio');
+}
+
 function createStudent ({
-    name,
-    email,
+    name = requiereParam('name'), //obligatorio
+    email = requiereParam('email'),
     age,
     twitter,
     instagram,
