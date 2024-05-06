@@ -68,3 +68,6 @@ function deepCopy(subject){
 
 
 //deepcopy con recursividad.
+//objetos creando funciones recursivas que aplican el deepcopy
+//para ir elemento por elemento, para no copiar el valor de referencia, sino
+//valor de los objetos y array. 
