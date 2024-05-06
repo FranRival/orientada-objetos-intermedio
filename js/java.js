@@ -67,7 +67,34 @@ function deepCopy(subject){
 
 
 
-//deepcopy con recursividad.
-//objetos creando funciones recursivas que aplican el deepcopy
-//para ir elemento por elemento, para no copiar el valor de referencia, sino
-//valor de los objetos y array. 
+//factory pattern y roro
+//crear moldes de bojetos. con funciones. 
+
+function createStudent ({
+    name,
+    email,
+    age,
+    twitter,
+    instagram,
+    facebook,
+    aprovedCourses = [],
+    learningPaths = [],
+} = {}){
+    return {
+        name, 
+        age,
+        email,
+        learningPaths,
+        aprovedCourses,
+        socialMedia: {
+            twitter,
+            facebook,
+            instagram
+        }
+    }
+}
+
+
+
+const studiante1 = createStudent()
+
