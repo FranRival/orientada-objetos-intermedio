@@ -13,38 +13,58 @@ const obj1 = {
 }
 
 
-/* const stringifyCOmplexObject = JSON.stringify(obj1)
+const stringifyCOmplexObject = JSON.stringify(obj1)
 const obj2 = JSON.parse(stringifyCOmplexObject) 
- */
 
 
-//RECURSIVIDAD
-//funcion se llama a si misma.
-
-//crea ejecuciones de una misma funcion
 
 
-//function recursiva(){
-  //  if (/* validacion */) {
-        //llamado recursivo
-    //}else{
-        //llamados normales. sin recursividad. 
-    //}
-//}
 
 
-const numeritos = [0,1,2,3,4,5,6,7,8,9,54656,76,4,5]
-let numerito = 0
-for (let index = 0; index < numeritos.length; index++) {
-    numerito = numeritos[index]
-    console.log({index, numerito});
+
+function isObject(subject){
+    return typeof subject == 'object'
 }
 
-function recursiva(numersArray){
-    if (numersArray.length !=0) {
-        const firstNum = numersArray[0]
-        console.log(firstNum);
-        numersArray.shift()
-        recursiva(numersArray)
+
+function isArray(subject){
+    return Array.isArray(subject)
+}
+
+
+
+function deepCopy(subject){
+    let copySubject;
+
+    const subjectIsArray = isArray(subject)
+    const subjectIsObject = isObject(subject)
+
+    if (subjectIsArray) {
+        copySubject = []
+    }else if (subjectIsObject) {
+        copySubject = {}
+    }else{
+        return subject
     }
+
+
+    for (key in subject){
+        const keyIsObject = isObject(subject[key])
+
+        if (keyIsObject) {
+            copySubject[key] = deepCopy(subject[key])
+            
+        }else {
+            if (subjectIsArray) {
+                copySubject.push(subject[key])
+            }else{
+                copySubject[key] = subject[key]
+            }
+        }
+    }
+    return copySubject
 }
+
+
+
+//deepcopy con recursividad.
