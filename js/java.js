@@ -12,12 +12,12 @@ const obj1 = {
     }
 }
 
-
+/* 
 const stringifyCOmplexObject = JSON.stringify(obj1)
 const obj2 = JSON.parse(stringifyCOmplexObject) 
 
 
-
+ */
 
 
 
