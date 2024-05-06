@@ -101,5 +101,5 @@ function createStudent ({
 
 
 
-const studiante1 = createStudent()
+const studiante1 = createStudent({name: 'Amouranth', email: 'sdfd@ff.com'})
 
