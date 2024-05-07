@@ -1,23 +1,5 @@
 
-const obj1 = {
-    a: 'a',
-    b: 'b',
-    c: {
-        d: 'd',
-        e: 'e'
-    },
 
-    editA(){
-        this.a = 'Amouranth the whore'
-    }
-}
-
-/* 
-const stringifyCOmplexObject = JSON.stringify(obj1)
-const obj2 = JSON.parse(stringifyCOmplexObject) 
-
-
- */
 
 
 
@@ -66,9 +48,30 @@ function deepCopy(subject){
 }
 
 
+const studentBase = {
+    name: undefined,
+    email: undefined,
+    age: undefined,
+    aprovedCourses: undefined,
+    learningPaths: undefined,
+    socialMedia: {
+        twitter: undefined,
+        instagram: undefined,
+        facebook: undefined
+    }
+}
 
-//factory pattern y roro
-//crear moldes de bojetos. con funciones. 
+
+
+const Zara = deepCopy(studentBase)
+
+Object.defineProperty(Zara, 'name', {
+    value:'Zarilla',
+    configurable: false,
+})
+
+
+
 
 
 function requiereParam (param){
@@ -102,4 +105,8 @@ function createStudent ({
 
 
 const studiante1 = createStudent({name: 'Amouranth', email: 'sdfd@ff.com'})
+
+
+
+//abstraccion con objetos literales y deep cpy.
 
