@@ -65,7 +65,7 @@ const studentBase = {
 
 const Zara = deepCopy(studentBase)
 
-Object.defineProperty(Zara, 'name', {
+Object.defineProperty(Zara, 'age', {
     value:'Zarilla',
     configurable: false,
 })
