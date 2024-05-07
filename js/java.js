@@ -65,8 +65,10 @@ const studentBase = {
 
 const Zara = deepCopy(studentBase)
 
+Object.seal(Zara) 
 
-Object.seal(Zara) //ninguna propedad se va a eliminar
+Object.isSealed(Zara) //preguntarle a la consola si todos estan protegidos.
+Object.isFrozen(Zara) //no poder editar. 
 
 /* Object.defineProperty(Zara, 'name', {
     value:'Zarilla',
