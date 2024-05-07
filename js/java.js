@@ -65,11 +65,14 @@ const studentBase = {
 
 const Zara = deepCopy(studentBase)
 
-Object.defineProperty(Zara, 'age', {
+
+Object.seal(Zara) //ninguna propedad se va a eliminar
+
+/* Object.defineProperty(Zara, 'name', {
     value:'Zarilla',
     configurable: false,
 })
-
+ */
 
 
 
