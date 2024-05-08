@@ -103,15 +103,20 @@ function createStudent ({
             twitter,
             facebook,
             instagram,
-            name, 
+        },
+
+        readName(newName){ 
+            return private["_name"] = newName
         },
 
         changeName(newName){ //tenemos que pasar por la funcion. 
-            private.name = newName
+            private["_name"] = newName
         },
+
+
     }
-    return {
-    }
+    return public
+    
 }
 
 
