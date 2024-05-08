@@ -53,12 +53,26 @@ function createStudent ({
         changeName(newName){ //tenemos que pasar por la funcion. 
             private["_name"] = newName
         },
-
-
     }
+
+
+    Object.defineProperty(public, "readName", {
+        configurable: false,
+        writable: false
+    })
+
+
     return public
-    
+
 }
+/*     studiante1.readName = function () {
+        return 'Papas'} 
+       ----con this modofoko se puede modificar. 
+        */
+    
+
+
+
 
 
 
