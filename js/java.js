@@ -61,6 +61,13 @@ function createStudent ({
         writable: false
     })
 
+    Object.defineProperty(public, "changeName", {
+        configurable: false,
+        writable: false
+    })
+
+    
+
 
     return public
 
