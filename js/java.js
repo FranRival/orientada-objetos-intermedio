@@ -70,11 +70,7 @@ Object.seal(Zara)
 Object.isSealed(Zara) //preguntarle a la consola si todos estan protegidos.
 Object.isFrozen(Zara) //no poder editar. 
 
-/* Object.defineProperty(Zara, 'name', {
-    value:'Zarilla',
-    configurable: false,
-})
- */
+
 
 
 
@@ -95,6 +91,9 @@ function createStudent ({
 } = {}){
     return {
         name, 
+        changeName(newName){ //tenemos que pasar por la funcion. 
+            this.name = newName
+        },
         age,
         email,
         learningPaths,
@@ -113,5 +112,4 @@ const studiante1 = createStudent({name: 'Amouranth', email: 'sdfd@ff.com'})
 
 
 
-//abstraccion con objetos literales y deep cpy.
-
+//module pattern y namespaces : propiedades privadas en js
