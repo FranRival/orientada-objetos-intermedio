@@ -89,11 +89,12 @@ function createStudent ({
     aprovedCourses = [],
     learningPaths = [],
 } = {}){
-    return {
-        name, 
-        changeName(newName){ //tenemos que pasar por la funcion. 
-            this.name = newName
-        },
+
+    const private = {
+        "_name": name,
+    }
+
+    const public = {
         age,
         email,
         learningPaths,
@@ -101,8 +102,15 @@ function createStudent ({
         socialMedia: {
             twitter,
             facebook,
-            instagram
-        }
+            instagram,
+            name, 
+        },
+
+        changeName(newName){ //tenemos que pasar por la funcion. 
+            private.name = newName
+        },
+    }
+    return {
     }
 }
 
