@@ -91,3 +91,5 @@ const studiante1 = createStudent({name: 'Amouranth', email: 'sdfd@ff.com'})
 studiante1.name = 'WHOOOOO'
 
 //getters y setters crean una propiedad falsa para poder llamar a las propiedades privadas
+
+//los getters y setters quitan el value: y el writable:
