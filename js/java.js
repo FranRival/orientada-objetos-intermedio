@@ -52,7 +52,7 @@ function createStudent ({
             }else {
                 console.warn('Tu nombre debe tener al menos un caracter');
             }
-        }
+        },
 
 /*         readName(){ 
             return private["_name"]
@@ -87,8 +87,6 @@ const studiante1 = createStudent({name: 'Amouranth', email: 'sdfd@ff.com'})
 //getters y setters
 
 
-
-studiante1.name = 'WHOOOOO'
 
 //getters y setters crean una propiedad falsa para poder llamar a las propiedades privadas
 
