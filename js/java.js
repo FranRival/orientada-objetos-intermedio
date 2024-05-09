@@ -1,9 +1,5 @@
 
 
-
-
-
-
 function isObject(subject){
     return typeof subject == 'object'
 }
@@ -46,17 +42,29 @@ function createStudent ({
             instagram,
         },
 
-        readName(){ 
+        get name(){
             return private["_name"]
         },
 
-        changeName(newName){ //tenemos que pasar por la funcion. 
-            private["_name"] = newName
+        set name(newName){
+            if (newName.lenght != 0) {
+                private["_name"] = newName
+            }else {
+                console.warn('Tu nombre debe tener al menos un caracter');
+            }
+        }
+
+/*         readName(){ 
+            return private["_name"]
         },
+
+        changeName(newName){ 
+            private["_name"] = newName
+        }, */
     }
 
 
-    Object.defineProperty(public, "readName", {
+/*     Object.defineProperty(public, "readName", {
         configurable: false,
         writable: false
     })
@@ -65,26 +73,21 @@ function createStudent ({
         configurable: false,
         writable: false
     })
-
-    
-
+ */
 
     return public
 
 }
-/*     studiante1.readName = function () {
-        return 'Papas'} 
-       ----con this modofoko se puede modificar. 
-        */
-    
-
-
-
 
 
 
 const studiante1 = createStudent({name: 'Amouranth', email: 'sdfd@ff.com'})
 
 
+//getters y setters
 
-//module pattern y namespaces : propiedades privadas en js
+
+
+studiante1.name = 'WHOOOOO'
+
+//getters y setters crean una propiedad falsa para poder llamar a las propiedades privadas
