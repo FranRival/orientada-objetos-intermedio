@@ -66,8 +66,8 @@ function createStudent ({
     }
 
     const public = {
-        age,
         email,
+        age,
         learningPaths,
         aprovedCourses,
         socialMedia: {
@@ -81,7 +81,7 @@ function createStudent ({
         },
 
         set name(newName){
-            if (newName.lenght!=0) {
+            if (newName.length!=0) {
                 private["_name"] = newName
             }else {
                 console.warn('Tu nombre debe tener al menos un caracter');
