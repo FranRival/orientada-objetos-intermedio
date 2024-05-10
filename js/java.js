@@ -49,6 +49,39 @@ function requiereParam (param){
 }
 
 
+function createLearningPath({
+
+    name = requiereParam(),
+    courses =[],
+}) {
+    const private = {
+        "_name": name,
+        "courses": courses
+    }
+
+    const public = {
+        
+        get name(){
+            return private["_name"];
+        },
+
+        set name(newName){
+            if (newName.length!=0) {
+                private["_name"] = newName
+            }else {
+                console.warn('Tu nombre debe tener al menos un caracter');
+            }
+        },
+
+        
+        get courses(){
+            return private["_courses"];
+        },
+    }
+
+    return public
+}
+
 
 function createStudent ({
     name = requiereParam('name'), 
@@ -63,12 +96,12 @@ function createStudent ({
 
     const private = {
         "_name": name,
+        "_learningPaths": learningPaths
     }
 
     const public = {
         email,
         age,
-        learningPaths,
         aprovedCourses,
         socialMedia: {
             twitter,
@@ -87,6 +120,33 @@ function createStudent ({
                 console.warn('Tu nombre debe tener al menos un caracter');
             }
         },
+
+        get learningPaths(){
+            return private["_learningPaths"];
+        },
+
+        set learningPaths(newLP){
+
+            if (!newLP.name) {
+                console.warn('Tu LP no tiene name');
+                return
+            }
+
+
+            if (!newLP.courses){
+                console.warn('Tu LP no tiene courses');
+                return
+            }
+
+            if (!isArray(!newLP.courses)){
+                console.warn('Tu LP no es una (*lista de cursos)');
+                return
+            }
+
+
+            private["_learningPaths"] = newLP
+
+        },
     };
     return public
 }
@@ -94,7 +154,3 @@ function createStudent ({
 
 
 const studiante1 = createStudent({email: 'sdfd@ff.com', name: 'Amouranth'})
-
-
-//duck typing: elementos dependiendo de los metodos que tengan por dentro.
-
