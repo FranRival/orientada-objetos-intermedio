@@ -138,13 +138,13 @@ function createStudent ({
                 return
             }
 
-            if (!isArray(!newLP.courses)){
+            if (!isArray(newLP.courses)){
                 console.warn('Tu LP no es una (*lista de cursos)');
                 return
             }
 
 
-            private["_learningPaths"] = newLP
+            private["_learningPaths"].push(newLP)
 
         },
     };
@@ -154,3 +154,6 @@ function createStudent ({
 
 
 const studiante1 = createStudent({email: 'sdfd@ff.com', name: 'Amouranth'})
+
+/* const escuelaWeb = createLearningPath ({name: 'Escuela web', courses: []})
+studiante1.learningPaths = escuelaWeb */
