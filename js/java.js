@@ -90,7 +90,7 @@ function Student ({
         this.learningPaths=[];
         
         for (learningPathIndex in learningPaths){
-            if (learningPaths[learningPathIndex] instanceof learningPath) {
+            if (learningPaths[learningPathIndex] instanceof LearningPath) {
                 this.learningPaths.push(learningPaths[learningPathIndex])
             }
         }
