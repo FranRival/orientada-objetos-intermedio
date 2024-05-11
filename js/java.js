@@ -88,20 +88,14 @@ function Student ({
 
 
     if (isArray(learningPaths)) {
+        this.learningPaths=[]
+        
         for (learningPathIndex in learningPaths){
             if (learningPaths[learningPathIndex] instanceof learningPath) {
-                console.warn('Learningpath no es un veradadero LearningPath');
-                return
+                this.learningPaths.push(learningPaths[learningPathIndex])
             }
         }
     }
-    
-
-
-    
-
-    this.learningPaths=learningPaths
-
 }
 
 
