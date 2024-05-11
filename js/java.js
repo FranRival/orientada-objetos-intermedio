@@ -49,16 +49,21 @@ function requiereParam (param){
 }
 
 
-function createLearningPath({
+function LearningPath({
 
     name = requiereParam(),
     courses =[],
 }) {
-    const private = {
+
+    this.name = name
+    this.courses = courses
+
+
+/*     const private = {
         "_name": name,
         "_courses": courses
-    }
-
+    } */
+/* 
     const public = {
         
         get name(){
@@ -79,11 +84,11 @@ function createLearningPath({
         },
     }
 
-    return public
+    return public */
 }
 
 
-function createStudent ({
+function Student ({
     name = requiereParam('name'), 
     email = requiereParam('email'),
     age,
@@ -94,6 +99,20 @@ function createStudent ({
     learningPaths = [],
 } = {}){
 
+
+    this.name = name
+    this.email = email
+    this.age = age
+    this.aprovedCourses=aprovedCourses
+    this.socialMedia = {
+        twitter,
+        instagram,
+        facebook
+    }
+    this.learningPaths=learningPaths
+
+
+    /* 
     const private = {
         "_name": name,
         "_learningPaths": learningPaths
@@ -148,12 +167,11 @@ function createStudent ({
 
         },
     };
-    return public
+    return public */
 }
 
 
 
 const studiante1 = createStudent({email: 'sdfd@ff.com', name: 'Amouranth'})
 
-/* const escuelaWeb = createLearningPath ({name: 'Escuela web', courses: []})
-studiante1.learningPaths = escuelaWeb */
+// instanceof con instancias y prototipos 
