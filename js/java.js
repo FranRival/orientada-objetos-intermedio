@@ -58,33 +58,6 @@ function LearningPath({
     this.name = name
     this.courses = courses
 
-
-/*     const private = {
-        "_name": name,
-        "_courses": courses
-    } */
-/* 
-    const public = {
-        
-        get name(){
-            return private["_name"];
-        },
-
-        set name(newName){
-            if (newName.length!=0) {
-                private["_name"] = newName
-            }else {
-                console.warn('Tu nombre debe tener al menos un caracter');
-            }
-        },
-
-        
-        get courses(){
-            return private["_courses"];
-        },
-    }
-
-    return public */
 }
 
 
@@ -99,22 +72,12 @@ function Student ({
     learningPaths = [],
 } = {}){
 
-    if (!isArray(learningPaths)) {
-        console.warn('Learning no es un array.');
-    }
-    
-    for (learningPaths in learningPaths){
-        if (!learningPaths instanceof learningPaths) {
-            console.warn('Learningpath no es un veradadero LearningPath');
-            return
-        }
-    }
 
 
     this.name = name
     this.email = email
     this.age = age
-    this.learningPaths=learningPaths
+
     this.aprovedCourses=aprovedCourses
     this.socialMedia = {
         twitter,
@@ -124,62 +87,21 @@ function Student ({
 
 
 
-    /* 
-    const private = {
-        "_name": name,
-        "_learningPaths": learningPaths
+    if (isArray(learningPaths)) {
+        for (learningPathIndex in learningPaths){
+            if (learningPaths[learningPathIndex] instanceof learningPath) {
+                console.warn('Learningpath no es un veradadero LearningPath');
+                return
+            }
+        }
     }
-
-    const public = {
-        email,
-        age,
-        aprovedCourses,
-        socialMedia: {
-            twitter,
-            facebook,
-            instagram,
-        },
-
-        get name(){
-            return private["_name"];
-        },
-
-        set name(newName){
-            if (newName.length!=0) {
-                private["_name"] = newName
-            }else {
-                console.warn('Tu nombre debe tener al menos un caracter');
-            }
-        },
-
-        get learningPaths(){
-            return private["_learningPaths"];
-        },
-
-        set learningPaths(newLP){
-
-            if (!newLP.name) {
-                console.warn('Tu LP no tiene name');
-                return
-            }
+    
 
 
-            if (!newLP.courses){
-                console.warn('Tu LP no tiene courses');
-                return
-            }
+    
 
-            if (!isArray(newLP.courses)){
-                console.warn('Tu LP no es una (*lista de cursos)');
-                return
-            }
+    this.learningPaths=learningPaths
 
-
-            private["_learningPaths"].push(newLP)
-
-        },
-    };
-    return public */
 }
 
 
