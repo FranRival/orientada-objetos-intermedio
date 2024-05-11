@@ -77,7 +77,6 @@ function Student ({
     this.name = name
     this.email = email
     this.age = age
-
     this.aprovedCourses=aprovedCourses
     this.socialMedia = {
         twitter,
@@ -88,7 +87,7 @@ function Student ({
 
 
     if (isArray(learningPaths)) {
-        this.learningPaths=[]
+        this.learningPaths=[];
         
         for (learningPathIndex in learningPaths){
             if (learningPaths[learningPathIndex] instanceof learningPath) {
