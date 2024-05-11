@@ -99,17 +99,29 @@ function Student ({
     learningPaths = [],
 } = {}){
 
+    if (!isArray(learningPaths)) {
+        console.warn('Learning no es un array.');
+    }
+    
+    for (learningPaths in learningPaths){
+        if (!learningPaths instanceof learningPaths) {
+            console.warn('Learningpath no es un veradadero LearningPath');
+            return
+        }
+    }
+
 
     this.name = name
     this.email = email
     this.age = age
+    this.learningPaths=learningPaths
     this.aprovedCourses=aprovedCourses
     this.socialMedia = {
         twitter,
         instagram,
         facebook
     }
-    this.learningPaths=learningPaths
+
 
 
     /* 
@@ -171,7 +183,9 @@ function Student ({
 }
 
 
-
-const studiante1 = createStudent({email: 'sdfd@ff.com', name: 'Amouranth'})
+const escuelaWeb = new LearningPath({ name: 'EscuelaWeb'})
+const escuelaData = new LearningPath({ name: 'EscuelaData'})
+const studiante1 = new Student({email: 'sdfd@ff.com', name: 'Amouranth', learningPaths:[escuelaWeb, escuelaData]})
 
 // instanceof con instancias y prototipos 
+
