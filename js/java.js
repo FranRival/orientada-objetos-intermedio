@@ -56,7 +56,7 @@ function createLearningPath({
 }) {
     const private = {
         "_name": name,
-        "courses": courses
+        "_courses": courses
     }
 
     const public = {
