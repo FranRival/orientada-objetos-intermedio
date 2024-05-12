@@ -87,20 +87,32 @@ function Student ({
 
 
     if (isArray(learningPaths)) {
-        this.learningPaths=[];
-        
+        this._learningPaths=[];
         for (learningPathIndex in learningPaths){
-            if (learningPaths[learningPathIndex] instanceof LearningPath) {
-                this.learningPaths.push(learningPaths[learningPathIndex])
-            }
+            this.learningPaths = learningPaths[learningPathIndex]
         }
+
     }
 }
 
+
+Object.defineProperty(Student.prototype, 'learningPaths', {
+    get (){
+        return this._learningPaths
+    },
+
+    set (newLP){
+            if (newLP instanceof LearningPath) {
+                this._learningPaths.push(learningPaths[learningPathIndex])
+        }
+    }
+})
 
 const escuelaWeb = new LearningPath({ name: 'EscuelaWeb'})
 const escuelaData = new LearningPath({ name: 'EscuelaData'})
 const studiante1 = new Student({email: 'sdfd@ff.com', name: 'Amouranth', learningPaths:[escuelaWeb, escuelaData]})
 
-// instanceof con instancias y prototipos 
+// atributos y metodos privados en prototipos.
+
+
 
