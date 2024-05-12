@@ -100,7 +100,11 @@ Object.defineProperty(this, 'learningPaths', {
         }else{
             console.warn('LP no instancia de prototipo LearningPath');
         }
-    }
+    },
+    configurable: false // eliminar. 
+    //hasta ahora: creamos nomenclaturas para decir cuales atributos ymetodos son privados
+    //tambien podemos encapsularlos y protegerlos dentro de los prototiopos. 
+    
 })
 
     for (learningPathIndex in learningPaths){
