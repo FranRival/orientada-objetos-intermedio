@@ -103,7 +103,9 @@ Object.defineProperty(Student.prototype, 'learningPaths', {
 
     set (newLP){
             if (newLP instanceof LearningPath) {
-                this._learningPaths.push(learningPaths[learningPathIndex])
+                this._learningPaths.push(newLP)
+        }else{
+            console.warn('LP no instancia de prototipo LearningPath');
         }
     }
 })
