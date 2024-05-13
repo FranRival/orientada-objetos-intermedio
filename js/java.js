@@ -164,9 +164,15 @@ const escuelaData = new LearningPath({ name: 'EscuelaData'})
 const studiante1 = new Student({email: 'sdfd@ff.com', name: 'Amouranth', learningPaths:[escuelaWeb, escuelaData]})
 
 //metodos estaticos
-//lo que hemos hecho en este curso
-//1. atributos y metodos estaticos
-//2. creando super prototipo object.
+//crear con objetos literales y fabricas de bojetso.
+//como funcionan por dentro.
+//tienen llaves, y valores. mas atributos. valuable u configurable.
+//proteger. o leer. 
 
+//privadas o publicas. 
+//prototipos. 
+//copiar bojetos en js. 
+//almacenamiento y tipos de datos.
+//recursividad.
 
 
