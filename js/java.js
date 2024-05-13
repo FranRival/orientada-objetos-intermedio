@@ -44,6 +44,9 @@ function deepCopy(subject){
 
 
 
+
+
+
 function requiereParam (param){
     throw new Error(param + ' parametro obligatorio');
 }
@@ -120,7 +123,10 @@ const escuelaWeb = new LearningPath({ name: 'EscuelaWeb'})
 const escuelaData = new LearningPath({ name: 'EscuelaData'})
 const studiante1 = new Student({email: 'sdfd@ff.com', name: 'Amouranth', learningPaths:[escuelaWeb, escuelaData]})
 
-// atributos y metodos privados en prototipos.
+//metodos estaticos
+//lo que hemos hecho en este curso
+//1. atributos y metodos estaticos
+//2. creando super prototipo object.
 
 
 
