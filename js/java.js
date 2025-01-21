@@ -208,6 +208,7 @@ JSON.parse
 */
 //de string a objeto
 
-///mas sin que ver con el codigo anterior excepto:
+///mas sin que ver con el codigo anterior excepto: con la creacion del objeto. Objt1
 
 //una funcion recursiva se llama a si misma
+//y lo hace con un if y else. en el if es donde esta la recursividad. 
