@@ -192,3 +192,11 @@ const studiante1 = new Student({email: 'sdfd@ff.com', name: 'Amouranth', learnin
 
 
 //shallow copy - deepcopy. para copiar objetos a partir de uno ya existente
+
+
+/* 
+const obj3 = Object.assign({}, obj1) 
+const obj4 = Object.create(obj1)  
+*/
+
+//
