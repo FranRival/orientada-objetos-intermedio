@@ -191,3 +191,6 @@ const studiante1 = new Student({email: 'sdfd@ff.com', name: 'Amouranth', learnin
 ////hay que ver paso a paso. desde los primeros identificadores de codigo.
 
 //la primera tanda de commits, la he verificado. creando objetos con estudiante1.
+
+
+//object.defineproperty
