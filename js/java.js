@@ -187,3 +187,5 @@ const studiante1 = new Student({email: 'sdfd@ff.com', name: 'Amouranth', learnin
 //shallowcopy: copiar la misma direccion en el espacio de memoria.
 
 //deepcopy: separar la copia.
+
+////hay que ver paso a paso. desde los primeros identificadores de codigo.
