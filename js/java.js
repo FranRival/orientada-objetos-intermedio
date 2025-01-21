@@ -189,3 +189,6 @@ const studiante1 = new Student({email: 'sdfd@ff.com', name: 'Amouranth', learnin
 //deepcopy: separar la copia.
 
 //object.defineproperty. creados a partir del objeto estudiante1. - name, edad, email, etc.
+
+
+//shallow copy - deepcopy. para copiar objetos a partir de uno ya existente
