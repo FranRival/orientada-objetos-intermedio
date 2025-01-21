@@ -176,3 +176,14 @@ const studiante1 = new Student({email: 'sdfd@ff.com', name: 'Amouranth', learnin
 //recursividad.
 
 
+//////////21 de enero de 2025.
+///ya me acorde que son las propiedades modificables en true o false
+//el metodo es defineProperty.
+
+//otros metodos: keys - getownpropertiesnames
+
+//los objetos pueden ser cambiados sus valores. pero con seal - freeze son universales. cambiar a falso todos. o cambiar a configurable y writable. 
+
+//shallowcopy: copiar la misma direccion en el espacio de memoria.
+
+//deepcopy: separar la copia.
