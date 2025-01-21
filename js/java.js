@@ -207,3 +207,7 @@ JSON.stringify
 JSON.parse 
 */
 //de string a objeto
+
+///mas sin que ver con el codigo anterior excepto:
+
+//una funcion recursiva se llama a si misma
