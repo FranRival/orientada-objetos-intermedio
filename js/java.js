@@ -200,3 +200,10 @@ const obj4 = Object.create(obj1)
 */
 
 //
+
+//de objeto a string.
+/* 
+JSON.stringify
+JSON.parse 
+*/
+//de string a objeto
