@@ -217,3 +217,13 @@ JSON.parse
 
 //creo que ya se como llamar a la funcion que ha estado chingandome. la de matematicas.  
 /* const studiante1 = createStudent({name: 'Amouranth', email: 'sdfd@ff.com'}) */
+
+
+//object.seal(OBJETO) - seal es para que no sea eliminado. 
+
+
+//preguntarle a la consola - estos comandos.
+/* 
+Object.isSealed(Zara) - estan protegidos.
+Object.isFrozen(Zara) 
+*/
