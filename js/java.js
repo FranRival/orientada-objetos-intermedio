@@ -227,3 +227,6 @@ JSON.parse
 Object.isSealed(Zara) - estan protegidos.
 Object.isFrozen(Zara) 
 */
+
+
+//ahora no se como hacer funcionar las funciones. obtener los datos en el inspector de google. 
