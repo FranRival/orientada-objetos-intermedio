@@ -212,3 +212,8 @@ JSON.parse
 
 //una funcion recursiva se llama a si misma
 //y lo hace con un if y else. en el if es donde esta la recursividad. 
+
+
+
+//creo que ya se como llamar a la funcion que ha estado chingandome. la de matematicas.  
+/* const studiante1 = createStudent({name: 'Amouranth', email: 'sdfd@ff.com'}) */
