@@ -253,3 +253,11 @@ Object.isFrozen(Zara)
 
 //this en js: objeto global. 
 //creo que las funciones que lleven this. no podemos llamarlas asi. deben de ser llamadas por otras funciones.
+//this tiene un pedo de contexto. a que vrg se refiere this. 
+
+//arrowFunction
+//- capturar al objeto this. lo utiliza dentro de su bloque de instancias. 
+//existen por this.
+//son anonimas
+
+//una function retorna siempre un valor. sino, undefined.
