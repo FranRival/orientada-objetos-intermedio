@@ -230,3 +230,7 @@ Object.isFrozen(Zara)
 
 
 //ahora no se como hacer funcionar las funciones. obtener los datos en el inspector de google. 
+
+//ese es el problema actual que tenemos. como hacer funcionar las funciones. con el inspector, o hacer otras variables y funciones que las manden a llamar. 
+
+//el problema de la llamada. como ejecutar. son 2 formas, por el codigo o por la consola.
