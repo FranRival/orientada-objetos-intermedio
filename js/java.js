@@ -234,3 +234,18 @@ Object.isFrozen(Zara)
 //ese es el problema actual que tenemos. como hacer funcionar las funciones. con el inspector, o hacer otras variables y funciones que las manden a llamar. 
 
 //el problema de la llamada. como ejecutar. son 2 formas, por el codigo o por la consola.
+
+
+
+
+
+//objetos literales: 
+//para evitar que sean modificados, eliminados o agreguen mas campos.
+//para solo proteger o tambien leer.
+
+//privados o publicos. - here, no se what meands.
+//prototipos tampoco
+//copiar objetos ej js - menos
+//almacenamientos 
+//tipos de datos.
+//recursividad
