@@ -243,9 +243,13 @@ Object.isFrozen(Zara)
 //para evitar que sean modificados, eliminados o agreguen mas campos.
 //para solo proteger o tambien leer.
 
-//privados o publicos. - here, no se what meands.
+//privados o publicos. - here, no se what meands. _guion bajo para las propiedades protegidas
+//getters y setters - para llamarlas desde.......
 //prototipos tampoco
 //copiar objetos ej js - menos
 //almacenamientos 
 //tipos de datos.
 //recursividad
+
+//this en js: objeto global. 
+//creo que las funciones que lleven this. no podemos llamarlas asi. deben de ser llamadas por otras funciones.
