@@ -261,3 +261,6 @@ Object.isFrozen(Zara)
 //son anonimas
 
 //una function retorna siempre un valor. sino, undefined.
+
+
+//un get y set tambien forman parte de writable, configurable, 
