@@ -269,3 +269,5 @@ Object.isFrozen(Zara)
 //no hace un copiado profundo de objeto. solo copia la referencia. pero los valores profundos de punto a punto
 //obj.a.b.c - continuara copiando los mismos valores del objeto padre.
 
+////-----
+///no me acuerdo que son los metodos. o si los puedo crear yo. 
