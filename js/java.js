@@ -47,6 +47,14 @@ function deepCopy(subject){
             //si es un array u objeto
             //el objeto ya esta inicializado?
             //pero si es un boleano o string. no pasa nada.
+
+            //si es un objeto o un array, se reinicia el ciclo, porque?
+
+            //LA OTRA PARTE DIFICIL
+            //si es un valor primitivo, solo se copia.
+            //pero
+            //si es un array, se envia con push.
+            //si es un objeto, se copia.
             
         }else {
             if (subjectIsArray) {
@@ -58,6 +66,7 @@ function deepCopy(subject){
     }
     return copySubject
 }
+//3 niveles de profundidad explicado con chatgpt
 
 
 const studentBase = {
