@@ -68,6 +68,7 @@ function deepCopy(subject){
 }
 //3 niveles de profundidad explicado con chatgpt
 //como funciona esa fabrica de copiar objetos/arrays. en que parte del codigo sucede this magic. 
+//o tal vez asi no funcione. solo se referecian nuevos objetos sin ser una fabrica infinita. 
 
 
 const studentBase = {
