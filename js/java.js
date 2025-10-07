@@ -69,6 +69,11 @@ function deepCopy(subject){
 //3 niveles de profundidad explicado con chatgpt
 //como funciona esa fabrica de copiar objetos/arrays. en que parte del codigo sucede this magic. 
 //o tal vez asi no funcione. solo se referecian nuevos objetos sin ser una fabrica infinita. 
+//como queda la formula?
+
+//esta es la nomenclatura para fabricar decenas de estudiantes
+const estudianteUniversal = deepCopy(createStudent)
+estudianteUniversal.socialMedia.twitter = 'ddd'
 
 
 const studentBase = {
@@ -132,4 +137,6 @@ const studiante1 = createStudent({name: 'Amouranth', email: 'sdfd@ff.com'})
 
 
 //abstraccion con objetos literales y deep cpy.
+
+
 
