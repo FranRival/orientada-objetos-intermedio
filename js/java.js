@@ -29,9 +29,16 @@ function deepCopy(subject){
         return subject
     }
 
+    //se pregunta si es un objeto, o si es un array.
+    //objeto - nombre, correo, edad, etc.
+    //array - lista vacia. 
 
+
+    ///AQUI VIENE LA PARTE DIFICIL.
     for (key in subject){
         const keyIsObject = isObject(subject[key])
+            //key apunta a los datos que existen dentro de ese objeto/array. especificamente los valores.
+
 
         if (keyIsObject) {
             copySubject[key] = deepCopy(subject[key])
