@@ -272,4 +272,4 @@ Object.isFrozen(Zara)
 ////-----
 ///no me acuerdo que son los metodos. o si los puedo crear yo. 
 
-//despedazando el deepcopy.
+//ejecutando el deepcopy.
