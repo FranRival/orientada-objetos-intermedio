@@ -117,12 +117,12 @@ Mina.socialMedia.twitter = "sexooooo!"
 //////// 4 Y 5 NIVELES DE PROFUNDIDAD.
 //4 niveles.
 const Emily = deepCopy(studentBase)
-Emily.socialMedia.facebook.cercanos = "remarcables"
-console.log(Emily.socialMedia.facebook.cercanos);
+Emily.socialMedia.facebook.escuela.secundaria.PrimerAnio.sip = "remarcables"
+console.log(Emily.socialMedia.facebook.escuela.secundaria.PrimerAnio.sip);
 
 
 const Katy = deepCopy(studentBase)
-console.log(Katy.socialMedia.facebook.cercanos);
+console.log(Katy.socialMedia.facebook.escuela.secundaria.PrimerAnio.sip);
 
 
 
