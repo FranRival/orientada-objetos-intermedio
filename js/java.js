@@ -85,11 +85,25 @@ const studentBase = {
     socialMedia: {
         twitter: undefined,
         instagram: undefined,
-        facebook: undefined
+        facebook: {
+            cercanos: 'valorPresente',
+            lejanos: undefined,
+            escuela: {
+                primaria: undefined,
+                secundaria: {
+                    PrimerAnio:{
+                        sip: undefined,
+                        nop: undefined
+                    },
+                    SegundoAnio: undefined,
+                    TercerAnio: undefined
+                }
+            }
+        }
     }
 }
 
-
+//intentar llegar aun mas lejos. a 4 y 5 niveles de profundidad.
 
 const Zara = deepCopy(studentBase)
 
@@ -97,8 +111,19 @@ const Zara = deepCopy(studentBase)
 const Mina = deepCopy(studentBase)
 Mina.socialMedia.twitter = "sexooooo!"
 
-console.log(Zara.socialMedia.twitter);
-console.log(Mina.socialMedia.twitter);
+//console.log(Zara.socialMedia.twitter);
+//console.log(Mina.socialMedia.twitter);
+
+//////// 4 Y 5 NIVELES DE PROFUNDIDAD.
+//4 niveles.
+const Emily = deepCopy(studentBase)
+Emily.socialMedia.facebook.cercanos = "remarcables"
+console.log(Emily.socialMedia.facebook.cercanos);
+
+
+const Katy = deepCopy(studentBase)
+console.log(Katy.socialMedia.facebook.cercanos);
+
 
 
 
