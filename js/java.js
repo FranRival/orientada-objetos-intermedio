@@ -79,6 +79,12 @@ function requiereParam (param){
     throw new Error(param + ' parametro obligatorio');
 }
 
+
+//FACTORY FUNCTION: crea y devuelve un nuevo objeto configurando ciertos valores.
+
+
+//---> entrara un objeto con propiedades: name, email, age
+
 function createStudent ({
     name = requiereParam('name'), //obligatorio
     email = requiereParam('email'),
@@ -91,7 +97,7 @@ function createStudent ({
 } = {}){
     return {
         name, 
-        changeName(newName){ //tenemos que pasar por la funcion. 
+        changeName(newName){ //metodo. 
             this.name = newName
         },
         age,
