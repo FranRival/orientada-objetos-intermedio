@@ -272,4 +272,4 @@ Object.isFrozen(Zara)
 ////-----
 ///no me acuerdo que son los metodos. o si los puedo crear yo. 
 
-//ejecutando el deepcopy. entendiendo el getter y setter dentro de object.descriptor.
+//ejecutando el deepcopy. entendiendo el getter y setter dentro de object.descriptor. factoryFunction con createStudent.
