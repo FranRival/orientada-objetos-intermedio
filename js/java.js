@@ -113,6 +113,28 @@ function createStudent ({
 }
 
 
+//aqui, comenzar a ejecutarla:
+const Himelda = createStudent({
+    name: 'Himelda',
+    email: 'ffff@fff.com',
+    facebook: 'HHH',
+    aprovedCourses: ['Js basico', 'PhP basico']
+})
+
+console.log(Himelda.name);
+Himelda.changeName('Zoralla')
+console.log(Himelda.name);
+
+
+Himelda.aprovedCourses.push('sss')
+console.log(Himelda.aprovedCourses);
+
+
+
+
+
+
+
 
 const studiante1 = createStudent({name: 'Amouranth', email: 'sdfd@ff.com'})
 
