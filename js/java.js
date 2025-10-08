@@ -70,7 +70,11 @@ Object.defineProperty(Zara, 'age', {
     configurable: false,
 })
 
-
+//en los corchetes van los descriptores: datos o funciones getters y setters.
+//datos: value, writtable, configurable, enumerable. 
+//get: devuelve un valor.
+//set: un nuevo valor. 
+///el getter y setter se encuentran en object.defineProperty.
 
 
 
