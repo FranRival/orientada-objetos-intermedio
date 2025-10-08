@@ -72,8 +72,8 @@ function deepCopy(subject){
 //como queda la formula?
 
 //esta es la nomenclatura para fabricar decenas de estudiantes
-const estudianteUniversal = deepCopy(createStudent)
-estudianteUniversal.socialMedia.twitter = 'ddd'
+//const estudianteUniversal = deepCopy(createStudent)
+//estudianteUniversal.socialMedia.twitter = 'ddd'
 
 
 const studentBase = {
@@ -92,6 +92,15 @@ const studentBase = {
 
 
 const Zara = deepCopy(studentBase)
+
+
+const Mina = deepCopy(studentBase)
+Mina.socialMedia.twitter = "sexooooo!"
+
+console.log(Zara.socialMedia.twitter);
+console.log(Mina.socialMedia.twitter);
+
+
 
 Object.defineProperty(Zara, 'age', {
     value:'Zarilla',
