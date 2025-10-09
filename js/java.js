@@ -272,4 +272,4 @@ Object.isFrozen(Zara)
 ////-----
 ///no me acuerdo que son los metodos. o si los puedo crear yo. 
 
-//ejecutando el deepcopy. entendiendo el getter y setter dentro de object.descriptor. factoryFunction con createStudent. probando la funcion de fatory function.
+//ejecutando el deepcopy. entendiendo el getter y setter dentro de object.descriptor. factoryFunction con createStudent. probando la funcion de fatory function. las variables public y private estan funcionando como getters y setters + objectDescriptors.
