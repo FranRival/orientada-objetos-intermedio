@@ -49,8 +49,9 @@ function requiereParam (param){
 }
 
 
-function createLearningPath({
+const studiante1 = createStudent({email: 'sdfd@ff.com', name: 'Amouranth'})
 
+function createLearningPath({
     name = requiereParam(),
     courses =[],
 }) {
@@ -59,12 +60,18 @@ function createLearningPath({
         "courses": courses
     }
 
-    const public = {
-        
+    //no vi lo evidente. 
+    //es una funcion. 
+    //para instanciarla hay que meterle 2 tipos de datos.
+    //para acceder a ella: studiante1.learningPaths. no da nada
+    //esta vacia. 
+    //
+
+
+    const public = {  
         get name(){
             return private["_name"];
         },
-
         set name(newName){
             if (newName.length!=0) {
                 private["_name"] = newName
@@ -72,13 +79,10 @@ function createLearningPath({
                 console.warn('Tu nombre debe tener al menos un caracter');
             }
         },
-
-        
         get courses(){
             return private["_courses"];
         },
     }
-
     return public
 }
 
@@ -138,7 +142,7 @@ function createStudent ({
                 return
             }
 
-            if (!isArray(!newLP.courses)){
+            if (isArray(!newLP.courses)){
                 console.warn('Tu LP no es una (*lista de cursos)');
                 return
             }
@@ -153,4 +157,3 @@ function createStudent ({
 
 
 
-const studiante1 = createStudent({email: 'sdfd@ff.com', name: 'Amouranth'})
