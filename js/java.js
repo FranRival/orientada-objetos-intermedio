@@ -73,6 +73,9 @@ function createLearningPath({
     //studiante.learningPath = {name: 'zzz', courses: ['333','888']}
 
 
+    //string + array.
+
+
     const public = {  
         get name(){
             return private["_name"];
@@ -134,31 +137,42 @@ function createStudent ({
             return private["_learningPaths"];
         },
 
-        set learningPaths(newLP){
+        set learningPaths(newLP){//setter acumulativo:
 
-            if (!newLP.name) {
+            if (!newLP.name) {//si name existe, sigue.
                 console.warn('Tu LP no tiene name');
                 return
             }
 
 
-            if (!newLP.courses){
+            if (!newLP.courses){//valida que tenga propiedad
                 console.warn('Tu LP no tiene courses');
                 return
             }
 
-            if (isArray(!newLP.courses)){
+            if (isArray(!newLP.courses)){//valida que sea un array
                 console.warn('Tu LP no es una (*lista de cursos)');
                 return
             }
 
 
-            private["_learningPaths"] = newLP
+            private["_learningPaths"] = newLP //si pasa todas las validaciones, se guarda privadamente en:
 
         },
     };
     return public
 }
 
+const cursosVacios = {
+    name: 'XXX',
+    courses: null
+}
 
+const cursosVacios1 = {
+    name: 'XXX',
+}
 
+//como construyo esta variable: meter studiante + cursosVacios = para que lance las advertencias
+
+//studiante1.learningPaths = cursosVacios
+//studiante1.learningPaths = cursosVacios1
