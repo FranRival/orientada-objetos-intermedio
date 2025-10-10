@@ -150,7 +150,7 @@ function createStudent ({
                 return
             }
 
-            if (isArray(!newLP.courses)){//valida que sea un array
+            if (!isArray(!newLP.courses)){//valida que sea un array
                 console.warn('Tu LP no es una (*lista de cursos)');
                 return
             }
@@ -169,10 +169,16 @@ const cursosVacios = {
 }
 
 const cursosVacios1 = {
-    name: 'XXX',
+    name: 'VVV',
+}
+
+const cursosVacios2 = {
+    name: 'ZZZ',
+    courses: 'BBB, OOO, PPP'
 }
 
 //como construyo esta variable: meter studiante + cursosVacios = para que lance las advertencias
 
 //studiante1.learningPaths = cursosVacios
 //studiante1.learningPaths = cursosVacios1
+//studiante1.learningPaths = cursosVacios2
