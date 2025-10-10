@@ -65,7 +65,12 @@ function createLearningPath({
     //para instanciarla hay que meterle 2 tipos de datos.
     //para acceder a ella: studiante1.learningPaths. no da nada
     //esta vacia. 
-    //
+    //instanciada..........
+    //como hago para que tambien salga el nombre del estudiante.
+    //estructura para referenciar la funcion
+
+    //studiante.name
+    //studiante.learningPath = {name: 'zzz', courses: ['333','888']}
 
 
     const public = {  
@@ -76,7 +81,7 @@ function createLearningPath({
             if (newName.length!=0) {
                 private["_name"] = newName
             }else {
-                console.warn('Tu nombre debe tener al menos un caracter');
+                console.warn('Tu willie debe tener al menos un caracter');
             }
         },
         get courses(){
