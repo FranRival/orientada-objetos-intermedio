@@ -60,22 +60,6 @@ function createLearningPath({
         "courses": courses
     }
 
-    //no vi lo evidente. 
-    //es una funcion. 
-    //para instanciarla hay que meterle 2 tipos de datos.
-    //para acceder a ella: studiante1.learningPaths. no da nada
-    //esta vacia. 
-    //instanciada..........
-    //como hago para que tambien salga el nombre del estudiante.
-    //estructura para referenciar la funcion
-
-    //studiante.name
-    //studiante.learningPath = {name: 'zzz', courses: ['333','888']}
-
-
-    //string + array.
-
-
     const public = {  
         get name(){
             return private["_name"];
@@ -137,26 +121,26 @@ function createStudent ({
             return private["_learningPaths"];
         },
 
-        set learningPaths(newLP){//setter acumulativo:
+        set learningPaths(newLP){
 
-            if (!newLP.name) {//si name existe, sigue.
+            if (!newLP.name) {
                 console.warn('Tu LP no tiene name');
                 return
             }
 
-
-            if (!newLP.courses){//valida que tenga propiedad
+            if (!newLP.courses){
                 console.warn('Tu LP no tiene courses');
                 return
             }
 
-            if (!isArray(!newLP.courses)){//valida que sea un array
+            if (!Array.isArray(newLP.courses)){//hay un error. siempre entrara en el bucle porque la lista es un false.
+                //?
                 console.warn('Tu LP no es una (*lista de cursos)');
                 return
             }
 
 
-            private["_learningPaths"] = newLP //si pasa todas las validaciones, se guarda privadamente en:
+            private["_learningPaths"] = newLP
 
         },
     };
@@ -164,7 +148,7 @@ function createStudent ({
 }
 
 const cursosVacios = {
-    name: 'XXX',
+    name: 'X3X',
     courses: null
 }
 
@@ -177,8 +161,14 @@ const cursosVacios2 = {
     courses: 'BBB, OOO, PPP'
 }
 
+const cursosVacios3 = {
+    name: 'OOO',
+    courses: ['qqq','eee', 'ppp']
+}
+
 //como construyo esta variable: meter studiante + cursosVacios = para que lance las advertencias
 
 //studiante1.learningPaths = cursosVacios
 //studiante1.learningPaths = cursosVacios1
 //studiante1.learningPaths = cursosVacios2
+//studiante1.learningPaths = cursosVacios3
