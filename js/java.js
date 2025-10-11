@@ -135,11 +135,40 @@ function createStudent ({
 
             if (!Array.isArray(newLP.courses)){//hay un error. siempre entrara en el bucle porque la lista es un false.
                 //?
+                //if (!Array.isArray(!newLP.courses)){
+                //esta convirtiendo esto en un boleano
+                //true o false
+                //! - este simbolo convierte una expresion en boleano y luego la niega
+                //devuelve un true si: 
+                //es undefined, null, false, 0, vacio, NaN.
+                //!newLP.courses da un boleano.
+
+                //"si courses no esta definido o tiene un valor vacio o no util, muestra la adventencia"
+
+                //!newLP.courses da un boleano. FALSE.
+                //Array.isArray(false) - devuelve false.
+
+                //Array.isArray - devuelve true
+
+                //! - operacion logico de negacion NOT
+                //convierte el valor en boleano y luego lo invierte
+
+                //Array.isArray - true - pero -
+                //!Array.isArray - es false. porque lo invirtio.
+
+                //Array.isArray(courses) - true
+                //Array.isArray(!courses) - false. 
+
+                //pasas algo falso al Array.isArray
+                //este pregintara si es verdadero o falso. es falso en este caso.
+
+                //if (!Array.isArray(newLP.courses))
+                //if (falso. tu cursosVacios3 es falso.)
+
+
                 console.warn('Tu LP no es una (*lista de cursos)');
                 return
             }
-
-
             private["_learningPaths"] = newLP
 
         },
