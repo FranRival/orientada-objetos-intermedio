@@ -229,3 +229,16 @@ const cursosVacios3 = {
 //acumulador - valor que se va acumulando
 
 //10 12 12 15 15 19 19 24 - correcto. lo understand. 
+
+//funcion de reduce mas compleja.
+
+
+// const numeros = [1, 2, 3, 4, 5, 6];
+// const agrupados = numeros.reduce((acc, num) => {
+//   const tipo = num % 2 === 0 ? 'pares' : 'impares';
+//   acc[tipo].push(num);
+//   return acc;
+// }, { pares: [], impares: [] });
+
+// console.log(agrupados);
+// // { pares: [2, 4, 6], impares: [1, 3, 5] }
