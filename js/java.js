@@ -217,4 +217,15 @@ const cursosVacios3 = {
     //filter - crea un nuevo array con elementos que superan la condicion.
     //map - itera en cada elemento dentro del array y ejecuta acciones especificas sin danar el array original
 
-    ///que son? como se les puede categorizar
+
+
+
+    ///reduce : (acumulador, elementoActual)
+
+//    array.reduce((acumulador, elementoActual) => {
+//   return nuevoAcumulador;
+// }, valorInicial);
+
+//acumulador - valor que se va acumulando
+
+//10 12 12 15 15 19 19 24 - correcto. lo understand. 
