@@ -201,3 +201,10 @@ const cursosVacios3 = {
 //studiante1.learningPaths = cursosVacios1
 //studiante1.learningPaths = cursosVacios2
 //studiante1.learningPaths = cursosVacios3
+
+
+
+//!! - boleano explicito.
+// lo niega, y luego lo vuelve a negar. obtiene su valor boleano real.
+
+//1. true. 2. true. 3.false 4. true. 5. false. 6. true. 7. false. 8. false
