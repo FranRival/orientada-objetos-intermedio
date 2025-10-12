@@ -207,4 +207,14 @@ const cursosVacios3 = {
 //!! - boleano explicito.
 // lo niega, y luego lo vuelve a negar. obtiene su valor boleano real.
 
-//1. true. 2. true. 3.false 4. true. 5. false. 6. true. 7. false. 8. false
+//1. true. 2. true. 3.false 4. true. 5. false. 6. true. 7. false. 8. false - 2 errores. 
+
+//funciones =>
+
+    //every - verifica si cumplen una condicion - lanza true o false
+    //sort - ordena elementos, numeros.
+    //reduce - reduce a un valor unico.
+    //filter - crea un nuevo array con elementos que superan la condicion.
+    //map - itera en cada elemento dentro del array y ejecuta acciones especificas sin danar el array original
+
+    ///que son? como se les puede categorizar
