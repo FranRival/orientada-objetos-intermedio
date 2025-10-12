@@ -274,3 +274,4 @@ Object.isFrozen(Zara)
 
 //ejecutando el deepcopy. entendiendo el getter y setter dentro de object.descriptor. factoryFunction con createStudent. probando la funcion de fatory function. las variables public y private estan funcionando como getters y setters + objectDescriptors. haciendo funcionar createStudent. como instanciarlo. como hacer que salte el error de WARM. instanciando la nueva funcion LearningPath que tiene mas de 2 datos de entrada. entrando a los diferentes if de learningPath. LearningPath entrando a todos los if bajo diferentes const, lanzando las advertencias en consola.
 //error: cuando un objeto busca ser el correcto, aun la consola lanza una adventencia. + un error de sintaxis en la linea 136 que requiere explicacion para replicacion. el simbolo de !, y como funciona y altera el codigo.
+//!! convierte en boleano y luego hace doble negacion. volviendolos en falsos si son falsos y veraderos si son veraderos.
