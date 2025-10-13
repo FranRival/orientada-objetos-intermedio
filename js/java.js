@@ -282,3 +282,5 @@ Object.isFrozen(Zara)
 //acc[longitud] = [] - crea o reemplaza una propiedad en el objeto acc con el nombre igual al valor de longitud, y le asigna un array vacio como valor.
 
 //aparecio una buena y nueva interrogante en el codigo del commit: 8cbd33cfccffb8a3c5c1ab9705f402c121eff546
+
+//el siguiente commit luego de este, se explica mas a detalle.
