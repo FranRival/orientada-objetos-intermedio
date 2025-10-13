@@ -242,3 +242,16 @@ const cursosVacios3 = {
 
 // console.log(agrupados);
 // // { pares: [2, 4, 6], impares: [1, 3, 5] }
+
+//!acc[longitud]: significa “no existe” o “es falsy” esa propiedad (es decir, es undefined, null, false, etc.) - CHATgpt
+
+//!acc[longitud] - significa: no existe o es falsy. HOW?
+
+// ! - ese simbolo ahi en esa ubicacion, what meands?
+
+// ! convierte un valor en booleano y luego niega ese valor.
+
+//ZHO: acc[5] - existe esa propiedad en el objeto acc?
+// . si no existe sera undefined. 
+//!aac[5] - !undefined - true.
+//esta linea verifica si esa propiedad no existe, o es vacia, o falsy. por eso se ejecuta ese if y lo que hay dentro. 
