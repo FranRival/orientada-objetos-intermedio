@@ -341,3 +341,4 @@ console.log(agrupadas);
 // pez - pan - = tienen 3 caracteres. entonces agrupalas. 
 //se guardan en acc.
 //es una funcion bucle.
+
