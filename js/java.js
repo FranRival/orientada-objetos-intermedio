@@ -255,3 +255,41 @@ const cursosVacios3 = {
 // . si no existe sera undefined. 
 //!aac[5] - !undefined - true.
 //esta linea verifica si esa propiedad no existe, o es vacia, o falsy. por eso se ejecuta ese if y lo que hay dentro. 
+
+
+/*EN THIS CODE
+const palabras = ['gato', 'perro', 'pez', 'ratón', 'pan'];
+
+const agrupadas = palabras.reduce((acc, palabra) => {
+  const longitud = palabra.length;
+
+  if (!acc[longitud]) {
+    acc[longitud] = [];
+  }
+
+  acc[longitud].push(palabra);
+  return acc;
+}, {});
+
+console.log(agrupadas);
+*/
+
+//if(!acc[longitud]) - quedo explicada.
+//acc[longitud] = [] - crea o reemplaza una propiedad en el objeto acc con el nombre igual al valor de longitud, y le asigna un array vacio como valor.
+
+//sucede esto:
+/*
+let longitud = 5
+let acc = {}
+
+//zho:
+
+acc[longitud] = []
+
+//ocurre this:
+//js convierte el numero a string.
+
+acc["5"] = []
+
+{"5": []}
+*/
