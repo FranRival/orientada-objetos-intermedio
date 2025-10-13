@@ -277,3 +277,6 @@ Object.isFrozen(Zara)
 //!! convierte en boleano y luego hace doble negacion. volviendolos en falsos si son falsos y veraderos si son veraderos.
 //reduce: tiene 3 valores, (valorAcumulado, valorInicial) => valorAcumulado + valorInicial, 0) - el 0 es el que da valor a valorAcumulado.
 //if (!acc [longitud]) - verifica si no existe. y dado que no existe, por eso ejecuta el codigo.
+
+
+//acc[longitud] = [] - crea o reemplaza una propiedad en el objeto acc con el nombre igual al valor de longitud, y le asigna un array vacio como valor.
