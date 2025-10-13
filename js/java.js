@@ -276,3 +276,4 @@ Object.isFrozen(Zara)
 //error: cuando un objeto busca ser el correcto, aun la consola lanza una adventencia. + un error de sintaxis en la linea 136 que requiere explicacion para replicacion. el simbolo de !, y como funciona y altera el codigo.
 //!! convierte en boleano y luego hace doble negacion. volviendolos en falsos si son falsos y veraderos si son veraderos.
 //reduce: tiene 3 valores, (valorAcumulado, valorInicial) => valorAcumulado + valorInicial, 0) - el 0 es el que da valor a valorAcumulado.
+//if (!acc [longitud]) - verifica si no existe. y dado que no existe, por eso ejecuta el codigo.
