@@ -293,3 +293,34 @@ acc["5"] = []
 
 {"5": []}
 */
+
+
+//MANGO:
+//o = []
+//acc[4].push(o)
+
+
+const palabras = ['mango', 'platano', 'sandia', 'pera', 'guayaba', 'fesas', 'coco'];
+
+const agrupadas = palabras.reduce((acc, palabra) => {
+  const longitud = palabra.length;
+
+  if (!acc[longitud]) { //si no hay un array en acc con la clave longitud, entonces... 
+    //digamos que longitud vale 5
+    //existe esa propiedad en el objeto acc?
+    //no. es undefined.
+    //!aac[5] -> !undefined -> true. 
+    //entonces ejecuta el resto de codigo.
+    acc[longitud] = []; //vale 5. 
+    //ese numero 5, conviertelo a string.
+    //y ese 5 = []
+  }
+
+  acc[longitud].push(palabra);
+  return acc;
+}, {});
+
+console.log(agrupadas);
+
+//BUTT: entonces pasa esto - 5 = []. <- el 5 fue convertido a string. 
+//como puede agrupar las palabras que tengan la misma cantidad de caracteres?
