@@ -14,8 +14,11 @@ function deepCopy(subject){
 
     const subjectIsObject = isObject(subject)
     const subjectIsArray = isArray(subject)
+    //verificar que tipo de valor es subject.
+    //true o false.
 
 
+    //arriba que dio? - va aqui abajo dependiendo...
     if (subjectIsArray) {
         copySubject = []
     }else if (subjectIsObject) {
@@ -25,15 +28,25 @@ function deepCopy(subject){
     }
 
 
-    for (key in subject){
+    for (key in subject){//key: age, name,
+        //subject: objeto.
+        //subject; es un array, key sera el indice
         const keyIsObject = isObject(subject[key])
+        //subject[key] - 
+        // subject - {a: {x:1}, b:2} y key - ==='a'
+        //subject[key] - {x:1}
 
-        if (keyIsObject) {
-            copySubject[key] = deepCopy(subject[key])
+
+
+
+        if (keyIsObject) { //objeto.
+            //true o false.
+            //si es true
+            copySubject[key] = deepCopy(subject[key]) //corazon dela funcion.
             
-        }else {
+        }else { //array
             if (subjectIsArray) {
-                copySubject.push(subject[key])
+                copySubject.push(subject[key]) //agrega el elemento al nuevo array
             }else{
                 copySubject[key] = subject[key]
             }
