@@ -284,3 +284,5 @@ Object.isFrozen(Zara)
 //aparecio una buena y nueva interrogante en el codigo del commit: 8cbd33cfccffb8a3c5c1ab9705f402c121eff546
 
 //el siguiente commit luego de este, se explica mas a detalle.
+
+//desmembrando deepCopy
