@@ -324,3 +324,20 @@ console.log(agrupadas);
 
 //BUTT: entonces pasa esto - 5 = []. <- el 5 fue convertido a string. 
 //como puede agrupar las palabras que tengan la misma cantidad de caracteres?
+
+//ITERACIONES HASTA ACABAR CON EL ARRAY
+
+//perro - 5
+// acc[5] = ['perro']
+//gato - 4
+//acc[4] = ['gato']
+//pez - 3
+//acc[3] = ['pez']
+//pan - 3
+//acc[3] = ['pez','pan']
+
+//ya viste? no tiene que ver con logica de conteo. con categoria, o si entiende la diferencia entre animales o pan
+//sino con MATCH. 
+// pez - pan - = tienen 3 caracteres. entonces agrupalas. 
+//se guardan en acc.
+//es una funcion bucle.
