@@ -34,7 +34,8 @@ function deepCopy(subject){
 
     //cada atributo del original
     for (key in subject){//key: age, name,
-        //keyIsObject = isObject(original.name)
+
+
         //recorre todas las propiedades o indices del subject.
 
         const keyIsObject = isObject(subject[key]) //pregunta si keyIsObject es un objeto. true,... o false...
@@ -46,6 +47,15 @@ function deepCopy(subject){
             //true o false.
             //si es true
             copySubject[key] = deepCopy(subject[key]) //corazon dela funcion.
+            //EXPLICACION:
+            //en JS los objetos pueden recibir nuevas propiedades en cuaqlier momento. incluso si antes no existian.
+            //Crea (o actualiza) en copySubject una propiedad cuyo nombre este guardado en la variable key, y dale como valor una copia produnfa correctondiente en subject.
+
+            /*
+            El [key] no es algo que “ya exista”.
+Es el nombre dinámico de una propiedad que se crea justo en ese momento dentro del objeto vacío copySubject.
+
+*/
             
         }else { //array
             if (subjectIsArray) {
