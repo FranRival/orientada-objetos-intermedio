@@ -34,6 +34,7 @@ function deepCopy(subject){
 
     //cada atributo del original
     for (key in subject){//key: age, name,
+        //original[atributo.]
 
 
         //recorre todas las propiedades o indices del subject.
