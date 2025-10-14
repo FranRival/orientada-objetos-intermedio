@@ -35,24 +35,12 @@ function deepCopy(subject){
     //cada atributo del original
     for (key in subject){//key: age, name,
         //keyIsObject = isObject(original.name)
+        //recorre todas las propiedades o indices del subject.
 
         const keyIsObject = isObject(subject[key]) //pregunta si keyIsObject es un objeto. true,... o false...
 
 
-        //subject[key] - 
-        // subject - 
-        // {a: {x:1}, 
-        // b:2} 
-        // y key - ==='a'
-        //entonces:::::
-        //subject[a]
-        //y
-        //subject[key] - {x:1}
-
-
-
-        //recursiva: el problema se divide en subproblemas mas pequenos del mismo tipo
-
+        ///ENTRA A PREGUNTAR SI TIENE OBJETOS. entra preguntando, si es un true => 
         //usa el resultado de keyIsObject. true o false.
         if (keyIsObject) { //objeto.
             //true o false.
@@ -69,6 +57,10 @@ function deepCopy(subject){
     }
     return copySubject
 }
+
+//VISTAZO DEL PROBLEMA: linea 48. de donde saca el copySubject[key]. ese [key]?
+//es un objeto vacio.
+//no esta definido key. hasta el resto de la linea
 
 
 
