@@ -285,4 +285,10 @@ Object.isFrozen(Zara)
 
 //el siguiente commit luego de este, se explica mas a detalle.
 
-//desmembrando deepCopy
+//desmembrando deepCopy. 
+
+//deepCopy entra como variable normal con un parametro.
+//luego asigna a ese parametro un array o un objeto vacio.
+//luego, pregunta si la variable es un objeto, 
+//const keyIsObject = isObject(subject[key]) - lanza true o false
+//usa esa variable con true o false para entrar al if
