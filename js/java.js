@@ -10,15 +10,19 @@ function isArray(subject){
 
 
 function deepCopy(subject){
-    let copySubject;
+    //parametro comun y corriente
+
+    //subject = original.
+    let copySubject; //copia
 
     const subjectIsObject = isObject(subject)
     const subjectIsArray = isArray(subject)
-    //verificar que tipo de valor es subject.
+    //convierte parametro en array u objeto.
+
+
     //true o false.
-
-
-    //arriba que dio? - va aqui abajo dependiendo...
+    //si es array, haz un array vacio.
+    //si es objeto, objeto vacio
     if (subjectIsArray) {
         copySubject = []
     }else if (subjectIsObject) {
@@ -28,17 +32,28 @@ function deepCopy(subject){
     }
 
 
+    //cada atributo del original
     for (key in subject){//key: age, name,
-        //subject: objeto.
-        //subject; es un array, key sera el indice
-        const keyIsObject = isObject(subject[key])
+        //keyIsObject = isObject(original.name)
+
+        const keyIsObject = isObject(subject[key]) //pregunta si keyIsObject es un objeto. true,... o false...
+
+
         //subject[key] - 
-        // subject - {a: {x:1}, b:2} y key - ==='a'
+        // subject - 
+        // {a: {x:1}, 
+        // b:2} 
+        // y key - ==='a'
+        //entonces:::::
+        //subject[a]
+        //y
         //subject[key] - {x:1}
 
 
 
+        //recursiva: el problema se divide en subproblemas mas pequenos del mismo tipo
 
+        //usa el resultado de keyIsObject. true o false.
         if (keyIsObject) { //objeto.
             //true o false.
             //si es true
