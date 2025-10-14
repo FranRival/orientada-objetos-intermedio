@@ -292,3 +292,5 @@ Object.isFrozen(Zara)
 //luego, pregunta si la variable es un objeto, 
 //const keyIsObject = isObject(subject[key]) - lanza true o false
 //usa esa variable con true o false para entrar al if
+
+//copySubject[key] = deepCopy(subject[key]) - ese copySubject[key] - no existe. es una variable que es un reflejo de lo que sigue de igual. en el commit: 8168844fe9f6946bcc4d0a2a8ad593b4c5604d7d 
