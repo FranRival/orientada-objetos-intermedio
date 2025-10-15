@@ -296,3 +296,5 @@ Object.isFrozen(Zara)
 //copySubject[key] = deepCopy(subject[key]) - ese copySubject[key] - no existe. es una variable que es un reflejo de lo que sigue de igual. en el commit: 8168844fe9f6946bcc4d0a2a8ad593b4c5604d7d 
 
 //ciclo for + copySubject[key] = deepCopy(subject[key])
+
+//if (!learningPaths instanceof learningPaths) - no se puede usar una variable de bucle tambien como referencia de clase
