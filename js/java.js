@@ -298,3 +298,5 @@ Object.isFrozen(Zara)
 //ciclo for + copySubject[key] = deepCopy(subject[key])
 
 //if (!learningPaths instanceof learningPaths) - no se puede usar una variable de bucle tambien como referencia de clase
+
+//(!learningPaths instanceof learningPaths) - siempre se va a leer primero, lo que esta adelante del !
