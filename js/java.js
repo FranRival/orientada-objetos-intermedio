@@ -105,3 +105,12 @@ const studiante1 = new Student({email: 'sdfd@ff.com', name: 'Amouranth', learnin
 // instanceof con instancias y prototipos 
 
 //que dickenson hace esta cosa?
+
+const Nate = new Student({name:"Nate", email:"jjdf", learningPaths:[escuelaWeb]})
+
+//en array
+//para agregar mas informacion siempre hay que usar push.
+//no se hace
+//Nate.learningPaths[escuelaData]
+//y es
+//Nate.learningPaths.push(escuelaData) - push son parentesis
