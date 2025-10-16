@@ -307,3 +307,23 @@ Object.isFrozen(Zara)
 //inyectar informacion a un array: Nate.LearningPath.push(escuelaData)
 
 //delete4, codigo entero entendido.
+
+//15119d8b04b51155e558e9e4fd3dcf79aca8ba49 - en este commit, se hace esto: 
+
+/*
+Object.defineProperty(Student.prototype, 'learningPaths', {
+    get (){
+        return this._learningPaths
+    },
+
+    set (newLP){
+            if (newLP instanceof LearningPath) {
+                this._learningPaths.push(learningPaths[learningPathIndex])
+        }
+    }
+})
+*/
+
+//Cuando haces student.learningPaths = algo,
+//se ejecuta este bloque en lugar de asignar directamente.
+//Intenta permitir solo objetos que sean instancias de LearningPath
