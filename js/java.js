@@ -104,3 +104,4 @@ const studiante1 = new Student({email: 'sdfd@ff.com', name: 'Amouranth', learnin
 
 // instanceof con instancias y prototipos 
 
+//que dickenson hace esta cosa?
