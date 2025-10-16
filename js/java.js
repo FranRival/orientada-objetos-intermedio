@@ -300,3 +300,6 @@ Object.isFrozen(Zara)
 //if (!learningPaths instanceof learningPaths) - no se puede usar una variable de bucle tambien como referencia de clase
 
 //(!learningPaths instanceof learningPaths) - siempre se va a leer primero, lo que esta adelante del !
+
+//arrays se acceden por posición numérica, no por nombre de variable.
+//intentando inyectar informacion del LearningPath a un estudiante creado en consola. Se intento hacer - Nate.LearningPath[escuelaWeb]
