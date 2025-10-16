@@ -303,3 +303,5 @@ Object.isFrozen(Zara)
 
 //arrays se acceden por posición numérica, no por nombre de variable.
 //intentando inyectar informacion del LearningPath a un estudiante creado en consola. Se intento hacer - Nate.LearningPath[escuelaWeb]
+
+//inyectar informacion a un array: Nate.LearningPath.push(escuelaData)
