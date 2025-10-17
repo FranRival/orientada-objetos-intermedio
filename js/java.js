@@ -327,3 +327,13 @@ Object.defineProperty(Student.prototype, 'learningPaths', {
 //Cuando haces student.learningPaths = algo,
 //se ejecuta este bloque en lugar de asignar directamente.
 //Intenta permitir solo objetos que sean instancias de LearningPath
+
+//this.learningPaths = escuelaWeb.
+//esta declaracion sucede fuera de toda funcion.
+//al hacer esto no reemplaza el valor completo de LearningPath
+//esta linea no asigna directamente, sino que dispara un comportamiento controlado.
+//esta caracteristica desata la ejecucion del codigo dentro del setter.
+//learningPath es una propiedad de student. 
+//Student esta en un constructor.
+//object.defineProperty - apuntando a student, especificamente a learningPath.
+//
