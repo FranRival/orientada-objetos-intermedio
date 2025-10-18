@@ -346,3 +346,14 @@ Object.defineProperty(Student.prototype, 'learningPaths', {
 //4 - constructor 
 //5 - arrow function
 //6 - call / apply / bind
+
+//1 - global = window. modo no estricto apunta a window. la ventana del navegador. variables, funciones, document, localStorage
+
+//arrow function heredan el this del contexto donde fueron creadas. 
+//las funciones ya crean su propio this de manera automatica. apunta al objeto que la invoca.
+//las arrow function no crean this.
+
+//contexto global = nivel 0. el script antes de que empiece a crear funciones, objetos y clases. objeto Window. objeto o variable que fue definida fuera de bloques, clases y funciones
+
+//4
+//constructor: 
