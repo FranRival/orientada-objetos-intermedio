@@ -337,3 +337,12 @@ Object.defineProperty(Student.prototype, 'learningPaths', {
 //Student esta en un constructor.
 //object.defineProperty - apuntando a student, especificamente a learningPath.
 //
+
+//6 tipos de contextos en this
+//modo estricto - window - navegador / undefined.
+//1 - global
+//2 - funcion normal
+//3 - metodo de objeto
+//4 - constructor 
+//5 - arrow function
+//6 - call / apply / bind
