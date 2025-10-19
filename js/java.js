@@ -347,7 +347,7 @@ Object.defineProperty(Student.prototype, 'learningPaths', {
 //5 - arrow function
 //6 - call / apply / bind
 
-//1 - global = window. modo no estricto apunta a window. la ventana del navegador. variables, funciones, document, localStorage
+//1 - GLOBAL = window. modo no estricto apunta a window. la ventana del navegador. variables, funciones, document, localStorage
 
 //arrow function heredan el this del contexto donde fueron creadas. 
 //las funciones ya crean su propio this de manera automatica. apunta al objeto que la invoca.
@@ -355,16 +355,8 @@ Object.defineProperty(Student.prototype, 'learningPaths', {
 
 //contexto global = nivel 0. el script antes de que empiece a crear funciones, objetos y clases. objeto Window. objeto o variable que fue definida fuera de bloques, clases y funciones
 
-//4
-//constructor: new. 4 pasos. 1. se crea un espacio vacio. 2. el objeto vacio hereda las propiedades Persona.prototype. 
 
-//prototype: funciones y propieades. function coche: arrancar, detener.
-
-//3. la funcion ( function Persona(nombre)... ) se ejecuta, pero ahora this apunta a ese nuevo objeto recien creado. ( this.nomnbre = nombre ) es en realidad ( nuevoObjeto.nombre = nombre) 4. devuelve el this. 
-//es decir, const nate = new Persona("Nate"), apunta al nombre de esta linea. no de la funcion original de la que desciende.
-
-
-//2 funcion normal
+//2 FUNCION NORMAL 
 //su valor depende de como se llama a la funcion, no de donde se definio
 //modo no estricto = objeto global
 //mo estricto = no objeto global.
@@ -381,3 +373,33 @@ Object.defineProperty(Student.prototype, 'learningPaths', {
 //para recuperar el contexto, se usa bind. 
 
 //const copia = persona.saludar.bind(persona);
+
+//METODOS DE OBJETO
+//un metodo es una funcion dentro del objeto. cuando se llama al metodo el objeto que contiene se convierte en el nuevo dueno de la ejecucion.
+//el valor depende de quien llama la funcion, no de donde se definio.
+//perdida de this dentro de funciones internas:
+//cuando defines una funcion normal dentro de un metodo de objeto, esa funcion no pertenece al objeto, - pertenece al entorno global.
+//SCOPE: las funciones dentro de metodos se guardan en scope.
+//tener funciones dentro de metodos es proteccion, encapsulamiento,
+
+const Banco = {
+    nombre: "Amourant",
+    DineroTotal(bruto){
+        function verificarCantidad(bruto){}
+    }
+}
+
+//si quiero acceder a Banco.verificarCantidad() no es posible.
+
+
+
+
+//4
+//CONSTRUCTOR: new. 4 pasos. 1. se crea un espacio vacio. 2. el objeto vacio hereda las propiedades Persona.prototype. 
+
+//prototype: funciones y propieades. function coche: arrancar, detener.
+
+//3. la funcion ( function Persona(nombre)... ) se ejecuta, pero ahora this apunta a ese nuevo objeto recien creado. ( this.nomnbre = nombre ) es en realidad ( nuevoObjeto.nombre = nombre) 4. devuelve el this. 
+//es decir, const nate = new Persona("Nate"), apunta al nombre de esta linea. no de la funcion original de la que desciende.
+
+
