@@ -374,20 +374,21 @@ Object.defineProperty(Student.prototype, 'learningPaths', {
 
 //const copia = persona.saludar.bind(persona);
 
-//METODOS DE OBJETO
+//3- METODOS DE OBJETO
 //un metodo es una funcion dentro del objeto. cuando se llama al metodo el objeto que contiene se convierte en el nuevo dueno de la ejecucion.
 //el valor depende de quien llama la funcion, no de donde se definio.
 //perdida de this dentro de funciones internas:
 //cuando defines una funcion normal dentro de un metodo de objeto, esa funcion no pertenece al objeto, - pertenece al entorno global.
 //SCOPE: las funciones dentro de metodos se guardan en scope.
 //tener funciones dentro de metodos es proteccion, encapsulamiento,
-
+/*
 const Banco = {
     nombre: "Amourant",
     DineroTotal(bruto){
         function verificarCantidad(bruto){}
     }
 }
+    */
 
 //si quiero acceder a Banco.verificarCantidad() no es posible.
 
@@ -403,3 +404,7 @@ const Banco = {
 //es decir, const nate = new Persona("Nate"), apunta al nombre de esta linea. no de la funcion original de la que desciende.
 
 
+//CALL APPLY BIND
+//call - cada argumento pasa por separado. 
+//apply - array. o lista dinamica. 
+//bind - crea una nueva funcion que guarda ahora si el valor de this, con contexto.
