@@ -356,4 +356,6 @@ Object.defineProperty(Student.prototype, 'learningPaths', {
 //contexto global = nivel 0. el script antes de que empiece a crear funciones, objetos y clases. objeto Window. objeto o variable que fue definida fuera de bloques, clases y funciones
 
 //4
-//constructor: 
+//constructor: new. 4 pasos. 1. se crea un espacio vacio. 2. el objeto vacio hereda las propiedades Persona.prototype. 3. la funcion ( function Persona(nombre)... ) se ejecuta, pero ahora this apunta a ese nuevo objeto recien creado. ( this.nomnbre = nombre ) es en realidad ( nuevoObjeto.nombre = nombre) 4. devuelve el this. 
+
+//prototype: funciones y propieades. function coche: arrancar, detener.
