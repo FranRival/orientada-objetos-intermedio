@@ -404,7 +404,12 @@ const Banco = {
 //es decir, const nate = new Persona("Nate"), apunta al nombre de esta linea. no de la funcion original de la que desciende.
 
 
-//CALL APPLY BIND
+//5 CALL APPLY BIND
 //call - cada argumento pasa por separado. 
 //apply - array. o lista dinamica. 
 //bind - crea una nueva funcion que guarda ahora si el valor de this, con contexto.
+
+
+//6 ARROW FUNCTION
+//no tienen this. heredan el this donde fueron creadas. 
+//apuntan al objeto. y los valores se inyectan de forma descendiente.
