@@ -373,3 +373,11 @@ Object.defineProperty(Student.prototype, 'learningPaths', {
 //es una funcion que pertenece a un objeto.
 //FUNCION NORMAL: esta sola
 //METODO: esta dentro de un objeto y se usa con objeto.metodo()
+
+//cuando una funcion viene de un objeto, pero se llama fuera de el, y por eso pierde su contexto this.
+
+//const copia = persona.saludar; //sale undefined. porque copia se ejecuta sola. sin un objeto que la llame
+
+//para recuperar el contexto, se usa bind. 
+
+//const copia = persona.saludar.bind(persona);
