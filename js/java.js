@@ -362,3 +362,14 @@ Object.defineProperty(Student.prototype, 'learningPaths', {
 
 //3. la funcion ( function Persona(nombre)... ) se ejecuta, pero ahora this apunta a ese nuevo objeto recien creado. ( this.nomnbre = nombre ) es en realidad ( nuevoObjeto.nombre = nombre) 4. devuelve el this. 
 //es decir, const nate = new Persona("Nate"), apunta al nombre de esta linea. no de la funcion original de la que desciende.
+
+
+//2 funcion normal
+//su valor depende de como se llama a la funcion, no de donde se definio
+//modo no estricto = objeto global
+//mo estricto = no objeto global.
+
+//METODOS EN JS
+//es una funcion que pertenece a un objeto.
+//FUNCION NORMAL: esta sola
+//METODO: esta dentro de un objeto y se usa con objeto.metodo()
