@@ -413,3 +413,9 @@ const Banco = {
 //6 ARROW FUNCTION
 //no tienen this. heredan el this donde fueron creadas. 
 //apuntan al objeto. y los valores se inyectan de forma descendiente.
+
+
+///SUPER OBJECT
+//superObject - no hace nada. agrupa funciones relacionadas con objetos en un solo lugar. 
+//--es un manual. no hay herramientas sueltas. 
+//--superObject. (punto)
