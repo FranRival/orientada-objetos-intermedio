@@ -424,3 +424,6 @@ const Banco = {
 //2c24dba9f9ea6561d7bf83677a33887f525259eb - commit del 21 de enero de 2025. studiante1, studiante2, studiante3, studiante4.
 //1 y 2, en seal. 3 y 4 se pueden agregar nuevas propiedades.
 //si se eleminan propiedades del constructor, no afectaria el funcionamiento.
+
+
+//fd5a394920e95d894a77bb9cdcbc9d3fe8dbd91f - 23 enero. resolvimos el problema de como hacer llamar a las funciones desde la consola.
