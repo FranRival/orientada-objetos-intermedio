@@ -423,3 +423,4 @@ const Banco = {
 
 //2c24dba9f9ea6561d7bf83677a33887f525259eb - commit del 21 de enero de 2025. studiante1, studiante2, studiante3, studiante4.
 //1 y 2, en seal. 3 y 4 se pueden agregar nuevas propiedades.
+//si se eleminan propiedades del constructor, no afectaria el funcionamiento.
